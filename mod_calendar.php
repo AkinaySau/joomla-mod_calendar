@@ -12,10 +12,6 @@ use Joomla\CMS\Helper\ModuleHelper;
 
 defined( '_JEXEC' ) or die;
 
-JHtml::stylesheet( 'mod_languages/template.css', array( 'version' => 'auto', 'relative' => true ) );
-JHtml::script( 'mod_calendar/assets/build.js', array( 'version' => 'auto', 'relative' => true ) );
-
-
 $moduleclass_sfx = htmlspecialchars( $params->get( 'moduleclass_sfx' ) );
 
 require ModuleHelper::getLayoutPath( 'mod_calendar', $params->get( 'layout', 'default' ) );
