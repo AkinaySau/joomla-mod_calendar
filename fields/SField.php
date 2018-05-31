@@ -20,6 +20,7 @@ class SField extends FormField {
 		parent::__construct( $form );
 		$path_to_module = Uri::root() . DS . 'modules' . DS . 'mod_calendar' . DS;
 		$doc            = Factory::getDocument();
-		$doc->addScript( $path_to_module . 'assets' . DS . 'build.js', [] );
+		$doc->addStyleSheet( $path_to_module . 'assets' . DS . 'main.css' );
+		$doc->addScript( $path_to_module . 'assets' . DS . 'build.js' );
 	}
 }

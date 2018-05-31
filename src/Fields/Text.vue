@@ -1,22 +1,24 @@
 <template>
-	<div class="field"></div>
+	<div class="field">
+		<input type="text" class="text" name="" />
+	</div>
 </template>
 
 <script>
 	export default {
-		name: "Afield"
+		name: "SText"
 	}
 </script>
 
 <style lang="scss">
 	.field {
 		display: flex;
-		width: 50px;
-		height: 50px;
-		background: grey;
-		&__test{
-			color: antiquewhite;
+		width: 100%;
+		min-height: 50px;
+		background: transparent;
+		border-top: antiquewhite 1px solid;
+		&:first-child{
+			border-top: none;
 		}
-		box-sizing: border-box;
 	}
 </style>
