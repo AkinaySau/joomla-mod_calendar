@@ -6,11 +6,11 @@
 
 <script>
 	export default {
-		name: "SText"
+		name: "Text"
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.field {
 		display: flex;
 		width: 100%;

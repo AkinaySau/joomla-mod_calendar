@@ -1,0 +1,16 @@
+.btn {
+	padding: 0 12px 0 10px;
+	line-height: 25px;
+	.icon {
+		background-color: #e6e6e6;
+		border-radius: 3px 0 0 3px;
+		border-right: 1px solid #b3b3b3;
+		height: auto;
+		line-height: inherit;
+		margin: 0 6px 0 -10px;
+		opacity: 1;
+		text-shadow: none;
+		width: 34px;
+		z-index: -1;
+	}
+}

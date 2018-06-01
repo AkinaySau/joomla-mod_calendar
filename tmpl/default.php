@@ -10,10 +10,12 @@
 
 defined('_JEXEC') or die;
 
-// Access to module parameters
-$domain = $params->get('domain', 'https://www.joomla.org');
+$calendar= $params->get('calendar-list', '[]');
 ?>
-
-<a href="<?php echo $domain; ?>">
-	<?php echo 'calendar'; ?>
-</a>
+<div class="resources-blog__item">
+	<h5 class="resources-blog__item-title">Календарь событий</h5>
+	<div class="calendar-blog">
+		<div class="calendar-blog__date js-calendar-date" data-json='<?php echo $calendar; ?>'></div>
+		<div class="calendar-blog__output js-calendar-output"></div>
+	</div>
+</div>
